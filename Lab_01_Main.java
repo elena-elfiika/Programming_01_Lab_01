@@ -18,14 +18,14 @@ public class Lab_01_Main {
         do {
             d = (int) (Math.sqrt(a));
 
-            for(int i = 3; i <= d+1; i += 2){
+            for(int kva = 3; kva <= d+1; kva += 2){
                 if (a % i != 0){
                     prime_number = true;
                 } else {
                     prime_number = false;
                     break;
                 }
-                // System.out.println(a + " = a; " + d + " = d; i = " + i);
+                // System.out.println(a + " = a; " + d + " = d; kva = " + i);
             }
 
             if(prime_number && b == a - 2){
