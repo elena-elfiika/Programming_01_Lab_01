@@ -11,31 +11,27 @@ public class Lab_01_Main {
         int a = 5, b = 3;
         // Делитель
         int d;
-        boolean prime_number = false;
         
         System.out.println(n + " первых простых чисел:");
         
         do {
             d = (int) (Math.sqrt(a));
 
-            for(int kva = 3; kva <= d+1; kva += 2){
-                if (a % i != 0){
-                    prime_number = true;
-                } else {
-                    prime_number = false;
+            for(int kva = 3; kva <= d + 1; kva += 1){
+                if (a % kva == 0){
                     break;
+                } else {
+                    if (kva + 1 > d){
+                        if (b == a - 2){
+                            System.out.println(b + " и " + a);
+                            // System.out.println(a + " = a; " + d + " = d; kva = " + kva);
+                            n -= 1;
+                        }
+                        b = a;
+                    }
                 }
-                // System.out.println(a + " = a; " + d + " = d; kva = " + i);
             }
-
-            if(prime_number && b == a - 2){
-                System.out.println(b + " " + a);
-                n -=1;
-            }
-
-            if (prime_number) b = a;
             a += 2;
-            prime_number = false;
 
         } while (n!=0);
     }
