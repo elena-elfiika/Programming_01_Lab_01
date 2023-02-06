@@ -17,7 +17,7 @@ public class Lab_01_Main {
         do {
             d = (int) (Math.sqrt(a));
 
-            for (int kva = 3; kva <= d + 1; kva += 1){
+            for (int kva = 3; kva <= d + 1; kva += 2){
                 if (a % kva == 0){
                     break;
                 } else {
