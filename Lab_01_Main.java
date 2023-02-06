@@ -6,13 +6,13 @@
 public class Lab_01_Main {
     public static void main(String[] args) {
         // Счётчик пар
-        int n = 10;
+        int n = 30;
         // Первые простые числа
         int a = 5, b = 3;
         // Делитель
         int d;
         
-        System.out.println(n + " пар первых простых чисел:");
+        System.out.println(n + " первых пар простых чисел:");
         
         do {
             d = (int) (Math.sqrt(a));
