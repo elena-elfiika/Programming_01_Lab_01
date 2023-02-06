@@ -12,12 +12,12 @@ public class Lab_01_Main {
         // Делитель
         int d;
         
-        System.out.println(n + " первых простых чисел:");
+        System.out.println(n + " пар первых простых чисел:");
         
         do {
             d = (int) (Math.sqrt(a));
 
-            for(int kva = 3; kva <= d + 1; kva += 1){
+            for (int kva = 3; kva <= d + 1; kva += 1){
                 if (a % kva == 0){
                     break;
                 } else {
